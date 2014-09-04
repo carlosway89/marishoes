@@ -1,0 +1,105 @@
+body{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.login{
+  position: relative;
+  z-index: 1;
+  color: #eeeeee;
+  overflow: auto;
+  overflow-x: hidden;
+  max-height: 100%;
+  width: 100%;
+}
+.login a{
+  color: #7bae23;
+  text-decoration: none;
+}
+.login a:hover{
+  color: #69b055;
+  text-decoration: underline;
+}
+.login .email{
+  color: #7bae23;
+}
+.login .title-1{
+  color: #eeeeee;
+}
+.login .template-logo {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0;
+  padding-top: 40px;
+  text-align: center;
+  border-top: 3px solid #7bae23;
+}
+.login .template-logo a{
+  font-size: 30px;
+  font-weight: normal;
+  color: #7bae23;
+  display: inline-block;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  max-width: 100%;
+  text-transform: none;
+}
+.login .template-logo a:hover{
+  color: #7bae23;
+}
+.login .content{
+  width: 290px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.login .content .content-background{
+  background-color: #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+.login .content .create-account,
+.login .content .login-account{
+  border-top: 1px dotted #eeeeee;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+.login .copyright {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0 20px;
+  font-size: 12px;
+}
+.login input{
+  background-color: transparent;
+  color: #eeeeee;
+}
+
+#forgot_password{
+  margin-top: 50px;
+}
+.backstretch{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(account_patternb91f.png?5227);
+}
+.backstretch img{
+  width: 100%;
+  height: 100%;
+}

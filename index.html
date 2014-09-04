@@ -1,0 +1,307 @@
+<!doctype html>
+<!--[if (gt IE 9)|!(IE)]><!--> 
+<html lang="en" class="no-js"> <!--<![endif]-->
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="canonical" href="index.html" />
+  
+  
+  <meta name="description" content="Looks and works great on mobile devices, tablets and computers. Perfect for stores of any kinds, such as fashion, clothing, digital gadgets, furniture etc…" />
+
+  <title>Zapatos</title>
+
+  
+
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"  media="all"  />
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"  media="all"  />
+  <link href="css/styles.css" rel="stylesheet" type="text/css"  media="all"  />
+  <link href="css/animate.min.css" rel="stylesheet" type="text/css"  media="all"  />
+  
+  <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+  <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+          $('#header').height($('#navegador').height());
+
+          $('#navegador').affix({ offset: { top: $('#navegador').offset.top } });
+
+          $(document).ready(function() {
+
+            for (var i = 1; i <= 4; i++) {  
+
+                $('.sub-menu-'+i).delay(900*i).show('drop',800);            
+            }
+            $('.bg').on('click',function(event){
+              var id=$(this).attr('id');
+              $('.bg').removeClass('active');
+              $(this).addClass('active');
+              $('.img-shoes').fadeOut();
+              setTimeout(function(){
+
+                $('#shoes-'+id).fadeIn();
+              },500);
+              
+              
+              
+
+            });
+
+            $('#change-model').on('click',function(){
+
+              if ($('#option-model').is(":visible")) {
+                $('#option-model').slideUp();
+              }else{
+                $('#option-model').slideDown();
+              }
+              
+
+            });
+
+          });
+          
+
+  </script>
+  
+
+
+</head>
+
+<body>
+  <header id="header" class="fast-animated clearfix" >
+    <div id="navegador" data-spy="affix" data-offset-top="100" role="navigation">
+        <div class="overlay_header"></div>
+        <div class="container">
+            <div class="row margintop10">
+                <div class="col-lg-3 col-sm-3 ">
+                  <div class=" navbar-form ">
+                    <img src="img/logo.png" alt="zapatos" class="img-responsive center-block">
+                    <!-- <h4>Zapatos</h4> -->
+                  </div>
+                </div>
+                <div class="col-lg-9 col-sm-9">
+                  <div class="row">
+                    <div class="navigation col-lg-8 ">
+                      <nav class="navbar navbar-default" role="navigation">
+                        <div class="container-fluid">
+                          <!-- Brand and toggle get grouped for better mobile display -->
+                          <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>
+                            
+                          </div>
+
+                          <!-- Collect the nav links, forms, and other content for toggling -->
+                          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                              <li class="active"><a href="#">Inicio</a></li>
+                              <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Catalogo <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                  <li><a href="#">Action</a></li>
+                                  <li><a href="#">Another action</a></li>
+                                  <li><a href="#">Something else here</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Separated link</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">One more separated link</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="#">Novedades</a></li>
+                              <li><a href="#">Contactanos</a></li>
+                              
+                            </ul>
+                          </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                      </nav>
+                    </div>             
+                    <div class="col-lg-4 ">
+                      <div class="search-wrapper">
+                        <form class="navbar-form form-search navbar-left" role="search">
+                          <div class="input-group">
+                            <input type="text" class="form-control transparent" placeholder="Buscar Aqui">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default transparent" type="button"><i class="fa fa-search white"></i></button>
+                            </span>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+  </header>
+
+  <section id="module-content" class="clearfix">
+    <div class="row">
+        <img src="img/fondo.jpg" class="img-responsive">
+        <div id="shoes-color-picker">
+          <img id="shoes-white" src="img/shoes-colorpicker/white.png" class="img-responsive img-shoes" style="display:none">
+          <img id="shoes-perla" src="img/shoes-colorpicker/perla.png" class="img-responsive img-shoes" style="display:none">
+          <img id="shoes-pink" src="img/shoes-colorpicker/pink.png" class="img-responsive img-shoes" style="display:none">
+          <img id="shoes-sky" src="img/shoes-colorpicker/sky.png" class="img-responsive img-shoes" style="display:none">
+          <img id="shoes-brown" src="img/shoes-colorpicker/brown.png" class="img-responsive img-shoes" style="display:none">
+          <img id="shoes-blue" src="img/shoes-colorpicker/blue.png" class="img-responsive img-shoes" style="display:none">
+          <img id="shoes-green" src="img/shoes-colorpicker/green.png" class="img-responsive img-shoes" style="display:none">
+          <img id="shoes-black" src="img/shoes-colorpicker/black.png" class="img-responsive img-shoes" style="display:none">
+          <img id="shoes-yellow" src="img/shoes-colorpicker/yellow.png" class="img-responsive img-shoes" style="display:none">
+          <img id="shoes-purple" src="img/shoes-colorpicker/purple.png" class="img-responsive img-shoes" style="display:none">
+          <img id="shoes-red" src="img/shoes-colorpicker/red.png" class="img-responsive img-shoes" style="display:none">
+          <img id="shoes-orange" src="img/shoes-colorpicker/orange.png" class="img-responsive img-shoes" style="display:none">
+        </div>
+        <div class="sub-menu">
+          <div class="col-lg-offset-7 col-lg-5">
+              <div class="sub-menu-container-black sub-menu-1" style="display:none">
+                <h4 class="white">Zapatos Mari, gran variedad en modelos y colores</h4>
+              </div>
+          </div>
+          <br>
+          <div class="col-lg-offset-8 col-lg-4">
+              <div class="sub-menu-container-gold sub-menu-2" style="display:none">
+                <label class="black">Personaliza tu modelo con colores y accesorias que mas te gusten</label>
+              </div>
+              <div class="tool-modelos sub-menu-3 text-center" style="display:none">
+                <a id="change-model"  href="#">
+                  <label class="white pointer">Cambiar el modelo <i class=" glyphicon glyphicon-cog"></i></label>
+                </a>
+                <br>
+                <div id="option-model" style="display:none">
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="white">model 1</a></li>
+                    <li><a href="#" class="white">model 2</a></li>
+                    <li><a href="#" class="white">model 3</a></li>
+                    <li><a href="#" class="white">model 4</a></li>
+                    <li><a href="#" class="white">model 5</a></li>
+                    <li><a href="#" class="white">model 6</a></li>
+                    <li><a href="#" class="white">model 7</a></li>
+                  </ul>
+                </div>                
+              </div>
+          </div>
+          <br></br>
+          <div class="col-lg-offset-2 col-lg-8">
+              <div class="sub-menu-container-white sub-menu-4" style="display:none">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="col-lg-1 ">
+                      <div id="white" class="bg bg-white"></div>
+                    </div>
+                    <div class="col-lg-1 ">
+                      <div id="perla" class="bg bg-perla"></div>
+                    </div>
+                    <div class="col-lg-1 ">
+                      <div id="pink" class="bg bg-pink"></div>
+                    </div>
+                    <div class="col-lg-1 ">
+                      <div id="sky" class="bg bg-sky"></div>
+                    </div>
+                    <div class="col-lg-1 ">
+                      <div id="brown" class="bg bg-brown"></div>
+                    </div>
+                    <div class="col-lg-1 ">
+                      <div id="blue" class="bg bg-blue"></div>
+                    </div>
+                    <div class="col-lg-1 ">
+                      <div id="green" class="bg bg-green"></div>
+                    </div>
+                    <div class="col-lg-1 ">
+                      <div id="black" class="bg bg-black"></div>
+                    </div>
+                    <div class="col-lg-1 ">
+                      <div id="yellow" class="bg bg-yellow"></div>
+                    </div>
+                    <div class="col-lg-1 ">
+                      <div id="purple" class="bg bg-purple"></div>
+                    </div>
+                    <div class="col-lg-1 ">
+                      <div id="red" class="bg bg-red"></div>
+                    </div>
+                    <div class="col-lg-1 ">
+                      <div id="orange" class="bg bg-orange"></div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="color-picker"></div>
+
+    </div>
+    <div class="row">
+      <div class="barra">
+      </div>
+    </div>
+
+    <div class="container margintop10">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <div class="content-wrapper">
+            <div class="title">
+              <h4>zapatos</h4>
+            </div>
+            <div class="body">
+              <img src="" class="img-responsive">
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <div class="content-wrapper">
+            <div class="title">
+              <h4>zapatos</h4>
+            </div>
+            <div class="body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra, ligula non mollis pretium, lectus libero sodales augue, interdum auctor mauris dui non risus. Nulla facilisi. Nunc rutrum diam in elit sagittis eget viverra erat viverra. Morbi imperdiet aliquet libero vel rhoncus. Integer.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+  <footer id="footer">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+              &nbsp;
+            </div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+  </footer>
+
+<!-- End Recently Viewed Products -->
+</body>
+
+<!-- Mirrored from one-quickshop.myshopify.com/ by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 22 Aug 2014 19:47:53 GMT -->
+</html>
